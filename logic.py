@@ -3,7 +3,6 @@ import numpy as np
 from PIL import Image, ImageOps
 import os
 
-# Функция для предсказания
 def detect(image_path):
   np.set_printoptions(suppress=True)
   model = tf.keras.models.load_model("keras_model.h5", compile=False)
@@ -32,4 +31,5 @@ def check_required_files():
         if not os.path.exists(file):
             missing_files.append(file)
     
+
     return missing_files
