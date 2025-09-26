@@ -2,7 +2,7 @@ import telebot
 import logic
 import os
 
-API_TOKEN = '8102994026:AAFImRPgtDOkXYQ1qrN04xIkp9j003nzQtA'
+API_TOKEN = ''
 
 bot = telebot.TeleBot(API_TOKEN)
 
@@ -69,4 +69,5 @@ def echo_message(message):
 
 if __name__ == "__main__":
     print("Бот запущен...")
+
     bot.infinity_polling()
